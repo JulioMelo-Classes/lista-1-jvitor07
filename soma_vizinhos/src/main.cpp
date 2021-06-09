@@ -14,19 +14,18 @@ int countValues(int m, int n);
 
 int main( void )
 {
-    while(true)
-    {
-        int m;
-        int n;
 
+    int m = 0;
+    int n = 0;
+
+    while(n >= -10000 && n <=1000)
+    {
         cin >> m;
         cin >> n;
 
         int value = countValues(m, n);
 
         cout << value << "\n";
-
-        if(n == 0) break;
     }
 
     return 0;
