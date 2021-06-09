@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/fibonacci/src/function.cpp
+function.h
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/fibonacci/src/function.h
+
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/fibonacci/src/function.h
+vector
+-
+

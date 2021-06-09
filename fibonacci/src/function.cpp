@@ -2,8 +2,27 @@
 
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
-    // TODO: adicione o seu código aqui.
+    std::vector<unsigned int>fiboArray;
 
-    // TODO: Isto é apenas um STUB. Troque o retorno pelo que você julgar correto.
-    return std::vector<unsigned int>{};
+    if(n == 1) return fiboArray;
+
+    int valOne = 1;
+    int valTwo = 1;
+
+    fiboArray.push_back(valOne);
+    fiboArray.push_back(valTwo);
+
+    while(true)
+    {
+        int sum = valOne + valTwo;
+
+        if(sum >= n) break;
+
+        fiboArray.push_back(sum);
+
+        valOne = valTwo;
+        valTwo = sum;
+    }
+
+    return fiboArray;
 }
