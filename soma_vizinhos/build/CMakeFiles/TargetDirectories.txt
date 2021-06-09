@@ -1,0 +1,4 @@
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/soma_vizinhos/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/soma_vizinhos/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/soma_vizinhos/build/CMakeFiles/verify.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/soma_vizinhos/build/CMakeFiles/program.dir
