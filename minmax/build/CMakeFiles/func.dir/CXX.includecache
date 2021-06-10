@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/src/function.cpp
+function.h
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/src/function.h
+cstddef
+-
+
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/src/function.h
+utility
+-
+cstddef
+-
+

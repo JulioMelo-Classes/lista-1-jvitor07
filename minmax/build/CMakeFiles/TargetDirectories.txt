@@ -1,0 +1,7 @@
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/CMakeFiles/run_tests.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/CMakeFiles/func.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/tests/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/tests/CMakeFiles/all_tests.dir
+/mnt/c/Users/Jvito/desktop/LIP/LISTA1/minmax/build/tests/CMakeFiles/rebuild_cache.dir
