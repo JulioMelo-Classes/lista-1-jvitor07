@@ -18,10 +18,8 @@ int main( void )
     int m = 0;
     int n = 0;
 
-    while(n >= -10000 && n <=1000)
+    while(cin >> std::ws >> m && cin >> std::ws >> n)
     {
-        cin >> m;
-        cin >> n;
 
         int value = countValues(m, n);
 
