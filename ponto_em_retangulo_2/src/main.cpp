@@ -14,14 +14,14 @@ using std::max;
 
 #include "function.h"
 
-//=== Funções
-
-// Coloque aqui qualquer função auxiliar que desejar.
-
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
+    const Ponto IE = Ponto(2, 5);
+    const Ponto SD = Ponto(2, 7);
+    bool status = checkExistence(IE, SD);
+
+    cout << status << "\n";
 
     return 0;
 }
