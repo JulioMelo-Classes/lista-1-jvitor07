@@ -1,20 +1,5 @@
 #include "function.h"
 
-
-bool checkExistence(const Ponto &IE, const Ponto &SD)
-{
-    bool status = false;
-
-    std::pair<int, int>rangeX = {IE.x, SD.x};
-    std::pair<int, int>rangeY = {IE.y, SD.y};
-
-    status = rangeX.first - rangeX.second != 0 || rangeY.first - rangeY.second != 0 
-        ? true 
-        : false;
-        
-    return status;
-}
-
 bool insideCheck(const Ponto &IE, const Ponto &SD, const Ponto &P)
 {
     bool status = false;
@@ -56,9 +41,11 @@ bool edgeCheck(const Ponto &IE, const Ponto &SD, const Ponto &P)
 /*! 
  * Verifica se um ponto está dentro de um retângulo.
  */
-location_t pt_in_rect( const Ponto &IE, const Ponto &SD, const Ponto &P )
+location_t pt_in_rect( const Ponto &, const Ponto&, const Ponto&)
 {
-    // TODO: Adicione seu código aqui.
+    //if(edgeCheck(IE, SD, P)) return location_t::BORDER;
+    //if(insideCheck(IE, SD, P)) return location_t::INSIDE;
 
     return location_t::OUTSIDE;
 }
+        

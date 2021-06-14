@@ -17,9 +17,9 @@ struct Ponto {
 /// Tipos de localização do ponto no retângulo.
 enum location_t :int { INSIDE=0, BORDER=1, OUTSIDE=2 };
 
-bool checkExistence(const Ponto &IE, const Ponto &SD);
 bool insideCheck(const Ponto &IE, const Ponto &SD, const Ponto &P);
 bool edgeCheck(const Ponto &IE, const Ponto &SD, const Ponto &P);
-location_t pt_in_rect( const Ponto&, const Ponto&, const Ponto& );
+
+location_t pt_in_rect( const Ponto &, const Ponto& , const Ponto&);
 
 #endif
