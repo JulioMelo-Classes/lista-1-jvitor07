@@ -1,20 +1,22 @@
-cmake_minimum_required(VERSION 3.16.3)
-project (Inverter VERSION 1.0 LANGUAGES CXX )
+cmake_minimum_required(VERSION 3.0)
+project ( Retangulo2 VERSION 1.0 LANGUAGES CXX )
 
-set( CMAKE_CXX_STANDARD 17)
+#=== App target ===
+set( APP_NAME "program" )
+add_executable( ${APP_NAME} src/main.cpp src/function.cpp )
+set_target_properties( ${APP_NAME} PROPERTIES CXX_STANDARD 17 )
 
-#=== Lib target ===
-set( LIB_NAME "func" )
-add_library( ${LIB_NAME} src/function.cpp)
-set_target_properties( ${LIB_NAME} PROPERTIES CXX_STANDARD 11 )
-
-# #=== Test target ===
-set ( TEST_NAME "all_tests")
-add_subdirectory(tests)
-
-add_custom_target(
-    run_tests
-    COMMAND ${TEST_NAME} 2> /dev/null 
-    # COMMAND ${CMAKE_BINARY_DIR}/tests/tests
-    DEPENDS ${LIB_NAME}
-)
+#=== Testing by comparing OUTPUTs
+if (MSVC)
+    add_custom_target(
+        verify
+        COMMAND python3 ${CMAKE_SOURCE_DIR}/../scripts/verify-inputs.py ./DEBUG/${APP_NAME}
+        DEPENDS ${APP_NAME}
+    )
+else()
+    add_custom_target(
+        verify
+        COMMAND python3 ${CMAKE_SOURCE_DIR}/../scripts/verify-inputs.py ./${APP_NAME}
+        DEPENDS ${APP_NAME}
+    )
+endif (MSVC)
