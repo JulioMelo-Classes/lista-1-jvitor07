@@ -10,5 +10,11 @@ using std::iter_swap;
 template <size_t SIZE>
 void reverse( std::array< std::string, SIZE > & arr )
 {
-    /*codigo*/
+    for(int index = 0; index < SIZE; index++)
+    {
+        if(index + 1 < SIZE)
+        {
+            std::swap(arr[index], arr[index + 1]);
+        }
+    }
 }
