@@ -1,5 +1,8 @@
 #include "function.h"
 
+/*
+otimo
+*/
 bool checkExistence(const Ponto &IE, const Ponto &SD)
 {
     bool status = false;

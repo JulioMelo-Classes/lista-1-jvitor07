@@ -6,7 +6,9 @@ const int SIZE = 5; // input size.
 
 int *getValues(int length); 
 int countNegatives(int length, int* values);
-
+/*
+ok
+*/
 int main(void)
 {
     int* values = getValues(SIZE);

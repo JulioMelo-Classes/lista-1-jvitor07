@@ -1,7 +1,7 @@
 #include "function.h"
 #include <cstddef>
 
-std::pair<int, int>getMin(int values[], size_t n)
+std::pair<int, int>getMin(int values[], std::size_t n)
 {
     int minIndex = 0;
     int minValue = values[minIndex];
@@ -17,7 +17,7 @@ std::pair<int, int>getMin(int values[], size_t n)
     return std::pair<int, int>{minIndex, minValue};
 }
 
-std::pair<int, int>getMax(int values[], size_t n)
+std::pair<int, int>getMax(int values[], std::size_t n)
 {
     int maxIndex = n - 1;
     int maxValue = values[maxIndex];
@@ -43,7 +43,11 @@ std::pair<int, int>getMax(int values[], size_t n)
  * @return A pair of indexes to the first smallest and last largest values.
  */
 
-std::pair<int,int> min_max( int V[], size_t n )
+/*
+ok
+tive que usar std::size_t mas blz
+*/
+std::pair<int,int> min_max( int V[], std::size_t n )
 {
     if(n == 0) return std::pair<int, int>{-1, -1};
 

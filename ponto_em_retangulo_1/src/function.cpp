@@ -41,7 +41,9 @@ bool edgeCheck(const Ponto &IE, const Ponto &SD, const Ponto &P)
 /*! 
  * Verifica se um ponto está dentro de um retângulo.
  */
-
+/*
+ok, acho que ficaria mais simples se vc colocasse toda a checagem aqui nesta função. Mas blz
+*/
 location_t pt_in_rect(const Ponto &IE, const Ponto &SD, const Ponto &P)
 {
     if(edgeCheck(IE, SD, P)) return location_t::BORDER;

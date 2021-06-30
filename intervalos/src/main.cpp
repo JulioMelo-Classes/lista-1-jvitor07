@@ -17,6 +17,9 @@ int countValuesInInterval(std::vector<int>values, std::pair<int, int>interval);
 double calcPercentage(int quantity, double total);
 void printPercentages(std::vector<double>percentages);
 
+/*
+um pouco overkill para essa questão, mas ok
+*/
 int main(void)
 {
     int value;

@@ -13,7 +13,9 @@ using std::min;
 using std::max;
 
 #include "function.h"
-
+/*
+blz
+*/
 int main(void)
 {
     std::pair<int, int>cordOne;
@@ -33,7 +35,7 @@ int main(void)
         Ponto P{cordThree.first, cordThree.second};
 
         
-        bool exists = checkExistence(IE, SD);
+        bool exists = checkExistence(IE, SD); //poderia usar exists direto no if, tipo if(checkExistence(IE, SD)) ...
 
         if(exists) cout << respondWithStatus(pt_in_rect(IE, SD, P)) << "\n";
     }
